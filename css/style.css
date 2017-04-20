@@ -13,7 +13,7 @@ html,body {
   width:100%;
   margin: auto;
   position: relative;
-  background: url("../img/pexels-photo.jpg")no-repeat 50% 50%;
+  background: url("../img/overlay.png"),url("../img/pexels-photo.jpg")no-repeat 50% 50%;
   display: table;
   background-attachment: fixed;
   top :0;
@@ -296,7 +296,11 @@ padding : 20px;
 /*event plannig table*/
 
 
-
+.eventum-schedule{
+  position: relative;
+  z-index: 2;
+  margin-left:20px;
+}
 
 .eventum-schedules.layout-classic .eventum-schedule,
 .eventum-schedules.layout-addon .eventum-schedule {
@@ -413,4 +417,96 @@ padding : 20px;
 }
 .eventum-schedules.layout-tabbed .tab-content table {
   margin-bottom: 0;
+}
+
+
+
+/*footer*/
+
+.site-footer {
+  margin-top: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+.site-footer .site-info {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.site-footer .site-info a {
+  color: #fff;
+}
+.site-footer .social-block li  {
+  display: inline;
+  list-style: none;
+  padding : 5px;
+  font-size:20px;
+}
+.site-footer .social-block li a {
+  color: #fff;
+}
+.site-footer .social-block li a:hover, .site-footer .social-block li a:focus {
+  opacity: 0.8;
+}
+
+
+/*cowutdown*/
+
+
+#countdown{
+  width: 450px;
+  margin: 15% auto;
+}
+#clock span {
+  position: relative;
+  z-index:1;
+   float: left;
+   text-align: center;
+   font-size: 34px;
+   margin: 0 2.5%;
+   color: #fff;
+   padding: 20px;
+   width: 20%;
+   border-radius: 20px;
+   box-sizing: border-box;
+}
+#clock span:nth-child(1){
+  background: #fa5559;
+}
+#clock span:nth-child(2){
+  background: #26c2b9;
+}
+
+#clock span:nth-child(3){
+  background: #f6bc58;
+}
+#clock span:nth-child(4){
+  background: #2dcb74;
+}
+
+#clock:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+#units span{
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin-top: 30px;
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+}
+
+span.turn{
+  animation: turn 0.7s forwards ease;
+}
+
+@keyframes turn {
+  0%{transform: rotateX(0deg);}
+  100%{transform: rotateX(360deg);}
 }
