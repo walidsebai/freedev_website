@@ -7,6 +7,10 @@ html,body {
   height:100%;
   width:100%;
 }
+#navlink{
+  width: 60px;
+
+}
 .intro{
   height:100%;
   width:100%;
@@ -47,10 +51,10 @@ html,body {
   text-decoration:none;
   text-transform: uppercase;
 }
-.btn:hover{
+/*.btn:hover{
   border:3px solid #F9F3F4;
   color :#F9F3F4;
-}
+}*/
 
 p{
   font-size:160%;
