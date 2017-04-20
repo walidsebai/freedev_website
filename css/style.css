@@ -109,20 +109,19 @@ p{
   color:rgb(85, 85, 85);
 }
 .badges{
-  padding-top:20px;
-  padding-right:20px;
-  padding-bottom:20px;
-  padding-left:20px;
+padding : 20px;
   display:flex;
-  justify-content:space-around;
   align-items:flex-start;
+  justify-content:space-around;
   flex-wrap:wrap;
+
 }
 .single-badge{
-  width:290px;
+  width:250px;
   font-family:Helvetica, serif;
   background-color:white;
   margin-bottom:30px;
+  /*margin-left: 00px;*/
   box-shadow:rgba(0, 0, 0, 0.2) 0px 2px 2px 0px;
   border-top-left-radius:3px;
   border-top-right-radius:3px;
@@ -153,6 +152,16 @@ p{
   background-image:url("../img/bg.png");
   background-position-x:left, center;
   background-position-y:top, center;
+  background-attachment:scroll, fixed;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+.badges-ground4{
+  background-image:url("../img/Android.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position-x:center, right;
+  background-position-y:top, right;
   background-attachment:scroll, fixed;
   overflow-x:hidden;
   overflow-y:hidden;
@@ -281,4 +290,127 @@ p{
 }
 .bg-image-1::before {
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/*event plannig table*/
+
+
+
+
+.eventum-schedules.layout-classic .eventum-schedule,
+.eventum-schedules.layout-addon .eventum-schedule {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 10px;
+}
+.eventum-schedules.layout-classic .eventum-schedule table,
+.eventum-schedules.layout-addon .eventum-schedule table {
+  margin-bottom: 0;
+}
+.eventum-schedules.layout-classic .eventum-schedule:last-child,
+.eventum-schedules.layout-addon .eventum-schedule:last-child {
+  margin-bottom: 0;
+}
+.eventum-schedules.layout-classic .eventum-schedule:nth-child(1) .scedule-date-day,
+.eventum-schedules.layout-addon .eventum-schedule:nth-child(1) .scedule-date-day {
+  color: #ed145b;
+}
+.eventum-schedules.layout-classic .eventum-schedule:nth-child(2) .scedule-date-day,
+.eventum-schedules.layout-addon .eventum-schedule:nth-child(2) .scedule-date-day {
+  color: #92278f;
+}
+.eventum-schedules.layout-classic .eventum-schedule:nth-child(3) .scedule-date-day,
+.eventum-schedules.layout-addon .eventum-schedule:nth-child(3) .scedule-date-day {
+  color: #f26522;
+}
+.eventum-schedules.layout-classic .eventum-schedule:nth-child(4) .scedule-date-day,
+.eventum-schedules.layout-addon .eventum-schedule:nth-child(4) .scedule-date-day {
+  color: #cbd504;
+}
+.eventum-schedules.schedules-list .table-hover thead {
+  border-top: 1px solid #e5e5e5;
+}
+.eventum-schedules.layout-addon .eventum-schedule {
+  border-top: 0;
+  padding-top: 0;
+}
+.eventum-schedules.layout-addon .eventum-schedule .scedule-date {
+  margin-bottom: 50px;
+}
+.eventum-schedules .scedule-date {
+  font-size: 18px;
+  color: #000;
+}
+.eventum-schedules .scedule-date >span {
+  font-size: 72px;
+  line-height: 1;
+  display: block;
+  font-weight: bold;
+  color: #4bb463;
+}
+.eventum-schedules .table-hover th,
+.eventum-schedules .table-hover td {
+  padding: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.eventum-schedules .table-hover th a.event-speaker,
+.eventum-schedules .table-hover td a.event-speaker {
+  color: #888;
+}
+.eventum-schedules.layout-tabbed .events-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0 -30px 30px;
+  display: block;
+  text-align: center;
+}
+.eventum-schedules.layout-tabbed .events-nav >li {
+  display: inline-block;
+  margin: 0 30px;
+  position: relative;
+}
+.eventum-schedules.layout-tabbed .events-nav >li.active:after {
+  content: " ";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent;
+}
+.eventum-schedules.layout-tabbed .events-nav >li:nth-child(1) .scedule-date-day {
+  color: #ed145b;
+}
+.eventum-schedules.layout-tabbed .events-nav >li:nth-child(1).active:after {
+  border-bottom-color: #ed145b;
+}
+.eventum-schedules.layout-tabbed .events-nav >li:nth-child(2) .scedule-date-day {
+  color: #92278f;
+}
+.eventum-schedules.layout-tabbed .events-nav >li:nth-child(2).active:after {
+  border-bottom-color: #92278f;
+}
+.eventum-schedules.layout-tabbed .events-nav >li:nth-child(3) .scedule-date-day {
+  color: #f26522;
+}
+.eventum-schedules.layout-tabbed .events-nav >li:nth-child(3).active:after {
+  border-bottom-color: #f26522;
+}
+.eventum-schedules.layout-tabbed .events-nav >li:nth-child(4) .scedule-date-day {
+  color: #cbd504;
+}
+.eventum-schedules.layout-tabbed .events-nav >li:nth-child(4).active:after {
+  border-bottom-color: #cbd504;
+}
+.eventum-schedules.layout-tabbed .tab-content {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.eventum-schedules.layout-tabbed .tab-content table {
+  margin-bottom: 0;
 }
