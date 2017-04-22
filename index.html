@@ -28,13 +28,13 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#" class="hvr-underline-reveal" id="navlink">Link</a></li>
-          <li><a href="#" class="hvr-underline-reveal" id="navlink">Link</a></li>
-          <li><a href="#" class="hvr-underline-reveal" id="navlink">Link</a></li>
+          <li><a href="#facts" class="hvr-underline-reveal" id="navlink">about</a></li>
+          <li><a href="#speakers" class="hvr-underline-reveal" id="navlink">speakers</a></li>
+          <li><a href="#planing" class="hvr-underline-reveal" id="navlink">planing</a></li>
           <li>
             <div class="nav navbar-nav btn-group " role="group" >
-              <button type="button" class="btn btn-default navbar-btn hvr-rectangle-out">Left</button>
-              <button type="button" class="btn btn-default navbar-btn hvr-rectangle-out">Right</button>
+              <button type="button" class="btn btn-default navbar-btn hvr-rectangle-out">normal</button>
+              <button type="button" class="btn btn-default navbar-btn hvr-rectangle-out">challenger</button>
             </div>
           </li>
         </ul>
@@ -93,7 +93,7 @@
     </section>
 
 
-    <section class="bdg-sect">
+    <section class="bdg-sect" id="speakers">
       <div class="container-width">
         <h1 class="bdg-title">Speakers</h1>
         <div class="badges">
@@ -166,10 +166,6 @@
               <div class="social-popout"><img src="img/gmail1.png" /></div>
             </div> -->
           </div>
-          <div class="badge-foot">
-            <div class="social-popout"><img src="img/facebook1.png" /></div>
-            <div class="social-popout"><img src="img/gmail1.png" /></div>
-          </div>
         </div>
 
 
@@ -177,7 +173,7 @@
     </div>
   </section>
 
-    <div class="eventum-schedules layout-addon schedules-list">
+    <div class="eventum-schedules layout-addon schedules-list" id="planing">
       <div class="eventum-schedule">
         <div class="scedule-date text-center">
           <h3>Saturday/Sunday, 07/08 May 2017</h3>
@@ -295,5 +291,18 @@
   <script>
     $(window).stellar();
   </script> -->
-
+<script>
+$('a[href*="#"]:not([href="#"])').click(function() {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+});
+</script>
 </html>
