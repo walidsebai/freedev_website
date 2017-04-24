@@ -32,8 +32,9 @@
           <li><a href="#speakers" class="hvr-underline-reveal" id="navlink">speakers</a></li>
           <li><a href="#planing" class="hvr-underline-reveal" id="navlink">planing</a></li>
           <li>
-              <button type="button" class="btn btn-primary hvr-pulse-grow navbar-btn " style="margin-right:4px" href="https://docs.google.com/forms/d/1hGuPet4CAmS7pj7HvmUYBeWVAwpHprhYkn9RHXqUX0c">registration</button>
-            </div>
+
+            <button type="button" class="btn btn-primary hvr-pulse-grow navbar-btn " style="margin-right:4px" onclick="relocate()">registration</button>
+
           </li>
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -302,5 +303,11 @@ $('a[href*="#"]:not([href="#"])').click(function() {
     }
   }
 });
+</script>
+<script>
+function relocate()
+{
+     location.href = "https://docs.google.com/forms/d/1hGuPet4CAmS7pj7HvmUYBeWVAwpHprhYkn9RHXqUX0c/";
+}
 </script>
 </html>
