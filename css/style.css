@@ -1,0 +1,512 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+html,body {
+  margin:0;
+  padding:0;
+  height:100%;
+  width:100%;
+}
+
+.intro{
+  height:100%;
+  width:100%;
+  margin: auto;
+  position: relative;
+  background: url("../img/overlay.png"),url("../img/pexels-photo.jpg")no-repeat 50% 50%;
+  display: table;
+  background-attachment: fixed;
+  top :0;
+  background-size:cover;
+}
+
+
+.left-pos{
+  position:absolute;
+  top:20px;
+  margin :20px;
+  right:20px;
+}
+.intro .inner{
+  display: table-cell;
+  vertical-align:middle;
+  width:100%;
+  max-width:none;
+}
+
+.content{
+  max-width:500px;
+  text-align:center;
+  margin:0 auto;
+  position:relative;
+
+}
+.content h1{
+    position: relative;
+    z-index: 2;
+  font-family: 'Raleway', sans-serif;
+  font-size:500%;
+  color:#F9F3F4;
+  text-shadow: 0 0 300px #000;
+}
+.content .img img{
+  width:200px;
+  height:200px;
+}
+ .btnreg{
+  border-radius: 9px;
+  font-family: 'Oswald',sans-serif;
+  color: #036A81;
+  font-size:135%;
+  padding :10px 20px;
+  border: solid 3px #036A81;
+  text-decoration:none;
+  text-transform: uppercase;
+}
+.btnreg:hover{
+  border:3px solid #F9F3F4;
+  color :#F9F3F4;
+}*/
+
+p{
+  font-size:160%;
+  text-align:justify;
+  line-height:210%;
+}
+
+
+
+@media screen and (max-width: 750px){
+  .content h1{
+    font-size:250%;
+  }
+  .btnreg{
+    font-size:110%;
+    padding :7px 15px;
+  }
+  p{
+    font-size:100%;
+    line-height:160%;
+  }
+}
+
+/*badges*/
+
+
+.bdg-sect{
+  position:relative;
+  z-index:1;
+  border: 1px solid white;
+  padding-top:100px;
+  padding-bottom:100px;
+  font-family:Helvetica, serif;
+  background-color:rgb(250, 250, 250);
+}
+.bdg-title{
+  text-align:center;
+  font-size:2em;
+  margin-bottom:55px;
+  color:rgb(85, 85, 85);
+}
+.badges{
+padding : 20px;
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-around;
+  flex-wrap:wrap;
+
+}
+.single-badge{
+  width:250px;
+  font-family:Helvetica, serif;
+  background-color:white;
+  margin-bottom:30px;
+  /*margin-left: 00px;*/
+  box-shadow:rgba(0, 0, 0, 0.2) 0px 2px 2px 0px;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  border-bottom-right-radius:3px;
+  border-bottom-left-radius:3px;
+  font-weight:100;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  text-align:center;
+}
+.badges-ground1{
+  background-image:url("../img/vr.jpe");
+  background-position-x:left, center;
+  background-position-y:top, center;
+  background-attachment:scroll, fixed;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+.badges-ground2{
+  background-image:url("../img/docker.jpe");
+  background-position-x:left, center;
+  background-position-y:top, center;
+  background-attachment:scroll, fixed;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+.badges-ground3{
+  background-image:url("../img/bg.png");
+  background-position-x:left, center;
+  background-position-y:top, center;
+  background-attachment:scroll, fixed;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+.badges-ground4{
+  background-image:url("../img/Android.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position-x:center, right;
+  background-position-y:top, right;
+  background-attachment:scroll, fixed;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+.badges-header{
+  height:115px;
+
+}
+.badges-name{
+  font-size:1.4em;
+  margin-bottom:5px;
+}
+.badges-role{
+  color:rgb(119, 119, 119);
+  font-size:1em;
+  margin-bottom:25px;
+}
+.badges-desc{
+  font-size:16px;
+  line-height:20px;
+}
+.badges-avatar{
+  width:100px;
+  height:100px;
+  border-top-left-radius:100%;
+  border-top-right-radius:100%;
+  border-bottom-right-radius:100%;
+  border-bottom-left-radius:100%;
+  border-top-width:5px;
+  border-right-width:5px;
+  border-bottom-width:5px;
+  border-left-width:5px;
+  border-top-style:solid;
+  border-right-style:solid;
+  border-bottom-style:solid;
+  border-left-style:solid;
+  border-top-color:rgb(255, 255, 255);
+  border-right-color:rgb(255, 255, 255);
+  border-bottom-color:rgb(255, 255, 255);
+  border-left-color:rgb(255, 255, 255);
+  border-image-source:initial;
+  border-image-slice:initial;
+  border-image-width:initial;
+  border-image-outset:initial;
+  border-image-repeat:initial;
+  box-shadow:rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+  margin-top:-75px;
+  position:relative;
+}
+.badges-body{
+  margin-top:35px;
+  margin-right:10px;
+  margin-bottom:35px;
+  margin-left:10px;
+}
+.badges-foot{
+  color:rgb(255, 255, 255);
+  background-color:rgb(162, 144, 165);
+  /*background: skyblue;*/
+  padding-top:13px;
+  padding-bottom:13px;
+  display:flex;
+  justify-content:center;
+}
+
+.social-popout {
+	height: 48px;
+	width: 48px;
+	margin: 10px;
+	float: left;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+	-ms-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+}
+.social-popout img {
+	border-radius: 50%;
+	margin: 8px;
+	width: 90%;
+	box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.8);
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+	-ms-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+}
+.social-popout img:hover {
+	margin: 0px;
+	box-shadow: 6px 6px 4px 4px rgba(0,0,0,0.3);
+}
+
+
+
+
+/*the time maybe*/
+
+.facts i {
+  color: #fff;
+  font-size: 3em;
+}
+.facts h3 {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+
+.section {
+  padding: 70px 0;
+}
+
+.bg-image, .bg-image-1, .bg-image-2 {
+  position: relative;
+}
+.bg-image::before, .bg-image-1::before, .bg-image-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-image-1 {
+  background: url(../img/bg-1.jpg) no-repeat center center/cover;
+}
+.bg-image-1::before {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/*event plannig table*/
+
+
+.eventum-schedule{
+  position: relative;
+  z-index: 2;
+  margin-left:20px;
+}
+
+.eventum-schedules.layout-classic .eventum-schedule,
+.eventum-schedules.layout-addon .eventum-schedule {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 10px;
+}
+.eventum-schedules.layout-classic .eventum-schedule table,
+.eventum-schedules.layout-addon .eventum-schedule table {
+  margin-bottom: 0;
+}
+.eventum-schedules.layout-classic .eventum-schedule:last-child,
+.eventum-schedules.layout-addon .eventum-schedule:last-child {
+  margin-bottom: 0;
+}
+.eventum-schedules.layout-classic .eventum-schedule:nth-child(1) .scedule-date-day,
+.eventum-schedules.layout-addon .eventum-schedule:nth-child(1) .scedule-date-day {
+  color: #ed145b;
+}
+.eventum-schedules.layout-classic .eventum-schedule:nth-child(2) .scedule-date-day,
+.eventum-schedules.layout-addon .eventum-schedule:nth-child(2) .scedule-date-day {
+  color: #92278f;
+}
+.eventum-schedules.layout-classic .eventum-schedule:nth-child(3) .scedule-date-day,
+.eventum-schedules.layout-addon .eventum-schedule:nth-child(3) .scedule-date-day {
+  color: #f26522;
+}
+.eventum-schedules.layout-classic .eventum-schedule:nth-child(4) .scedule-date-day,
+.eventum-schedules.layout-addon .eventum-schedule:nth-child(4) .scedule-date-day {
+  color: #cbd504;
+}
+.eventum-schedules.schedules-list .table-hover thead {
+  border-top: 1px solid #e5e5e5;
+}
+.eventum-schedules.layout-addon .eventum-schedule {
+  border-top: 0;
+  padding-top: 0;
+}
+.eventum-schedules.layout-addon .eventum-schedule .scedule-date {
+  margin-bottom: 50px;
+}
+.eventum-schedules .scedule-date {
+  font-size: 18px;
+  color: #000;
+}
+.eventum-schedules .scedule-date >span {
+  font-size: 72px;
+  line-height: 1;
+  display: block;
+  font-weight: bold;
+  color: #4bb463;
+}
+.eventum-schedules .table-hover th,
+.eventum-schedules .table-hover td {
+  padding: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.eventum-schedules .table-hover th a.event-speaker,
+.eventum-schedules .table-hover td a.event-speaker {
+  color: #888;
+}
+.eventum-schedules.layout-tabbed .events-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0 -30px 30px;
+  display: block;
+  text-align: center;
+}
+.eventum-schedules.layout-tabbed .events-nav >li {
+  display: inline-block;
+  margin: 0 30px;
+  position: relative;
+}
+.eventum-schedules.layout-tabbed .events-nav >li.active:after {
+  content: " ";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent;
+}
+.eventum-schedules.layout-tabbed .events-nav >li:nth-child(1) .scedule-date-day {
+  color: #ed145b;
+}
+.eventum-schedules.layout-tabbed .events-nav >li:nth-child(1).active:after {
+  border-bottom-color: #ed145b;
+}
+.eventum-schedules.layout-tabbed .events-nav >li:nth-child(2) .scedule-date-day {
+  color: #92278f;
+}
+.eventum-schedules.layout-tabbed .events-nav >li:nth-child(2).active:after {
+  border-bottom-color: #92278f;
+}
+.eventum-schedules.layout-tabbed .events-nav >li:nth-child(3) .scedule-date-day {
+  color: #f26522;
+}
+.eventum-schedules.layout-tabbed .events-nav >li:nth-child(3).active:after {
+  border-bottom-color: #f26522;
+}
+.eventum-schedules.layout-tabbed .events-nav >li:nth-child(4) .scedule-date-day {
+  color: #cbd504;
+}
+.eventum-schedules.layout-tabbed .events-nav >li:nth-child(4).active:after {
+  border-bottom-color: #cbd504;
+}
+.eventum-schedules.layout-tabbed .tab-content {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.eventum-schedules.layout-tabbed .tab-content table {
+  margin-bottom: 0;
+}
+
+
+
+/*footer*/
+
+.site-footer {
+  margin-top: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+.site-footer .site-info {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.site-footer .site-info a {
+  color: #fff;
+}
+.site-footer .social-block li  {
+  display: inline;
+  list-style: none;
+  padding : 5px;
+  font-size:20px;
+}
+.site-footer .social-block li a {
+  color: #fff;
+}
+.site-footer .social-block li a:hover, .site-footer .social-block li a:focus {
+  opacity: 0.8;
+}
+
+
+/*cowutdown*/
+
+
+#countdown{
+  width: 450px;
+  margin: 15% auto;
+}
+#clock span {
+  position: relative;
+  z-index:1;
+   float: left;
+   text-align: center;
+   font-size: 34px;
+   margin: 0 2.5%;
+   color: #fff;
+   padding: 20px;
+   width: 20%;
+   border-radius: 20px;
+   box-sizing: border-box;
+}
+#clock span:nth-child(1){
+  background: #fa5559;
+}
+#clock span:nth-child(2){
+  background: #26c2b9;
+}
+
+#clock span:nth-child(3){
+  background: #f6bc58;
+}
+#clock span:nth-child(4){
+  background: #2dcb74;
+}
+
+#clock:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+#units span{
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin-top: 30px;
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+}
+
+span.turn{
+  animation: turn 0.7s forwards ease;
+}
+
+@keyframes turn {
+  0%{transform: rotateX(0deg);}
+  100%{transform: rotateX(360deg);}
+}
